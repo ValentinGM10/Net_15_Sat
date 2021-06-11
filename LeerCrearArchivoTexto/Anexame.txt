@@ -1,0 +1,8 @@
+
+acerca de 
+
+fontborderstyle
+zise
+backcolor
+dock  top
+
