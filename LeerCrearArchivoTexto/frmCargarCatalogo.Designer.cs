@@ -50,18 +50,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvTexto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTexto.Location = new System.Drawing.Point(12, 27);
+            this.dgvTexto.Location = new System.Drawing.Point(16, 33);
+            this.dgvTexto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvTexto.Name = "dgvTexto";
-            this.dgvTexto.Size = new System.Drawing.Size(870, 242);
+            this.dgvTexto.Size = new System.Drawing.Size(1160, 298);
             this.dgvTexto.TabIndex = 1;
             // 
             // btnExportar
             // 
             this.btnExportar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnExportar.Enabled = false;
-            this.btnExportar.Location = new System.Drawing.Point(148, 287);
+            this.btnExportar.Location = new System.Drawing.Point(197, 353);
+            this.btnExportar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(130, 23);
+            this.btnExportar.Size = new System.Drawing.Size(173, 28);
             this.btnExportar.TabIndex = 5;
             this.btnExportar.Text = "Subir datos al Servidor";
             this.btnExportar.UseVisualStyleBackColor = true;
@@ -72,9 +74,10 @@
             this.btnLeerArchivoTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLeerArchivoTxt.CausesValidation = false;
             this.btnLeerArchivoTxt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLeerArchivoTxt.Location = new System.Drawing.Point(12, 287);
+            this.btnLeerArchivoTxt.Location = new System.Drawing.Point(16, 353);
+            this.btnLeerArchivoTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLeerArchivoTxt.Name = "btnLeerArchivoTxt";
-            this.btnLeerArchivoTxt.Size = new System.Drawing.Size(130, 23);
+            this.btnLeerArchivoTxt.Size = new System.Drawing.Size(173, 28);
             this.btnLeerArchivoTxt.TabIndex = 4;
             this.btnLeerArchivoTxt.Text = "Leer Archivo Txt";
             this.btnLeerArchivoTxt.UseVisualStyleBackColor = true;
@@ -83,55 +86,61 @@
             // txtContar
             // 
             this.txtContar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtContar.Location = new System.Drawing.Point(784, 287);
+            this.txtContar.Location = new System.Drawing.Point(1045, 353);
+            this.txtContar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtContar.Name = "txtContar";
             this.txtContar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtContar.Size = new System.Drawing.Size(98, 15);
+            this.txtContar.Size = new System.Drawing.Size(131, 18);
             this.txtContar.TabIndex = 6;
             this.txtContar.Text = "0";
             // 
             // lblObligacion
             // 
             this.lblObligacion.AutoSize = true;
-            this.lblObligacion.Location = new System.Drawing.Point(495, 297);
+            this.lblObligacion.Location = new System.Drawing.Point(660, 366);
+            this.lblObligacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblObligacion.Name = "lblObligacion";
-            this.lblObligacion.Size = new System.Drawing.Size(35, 13);
+            this.lblObligacion.Size = new System.Drawing.Size(45, 16);
             this.lblObligacion.TabIndex = 12;
             this.lblObligacion.Text = "label4";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(421, 297);
+            this.label3.Location = new System.Drawing.Point(561, 366);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 13);
+            this.label3.Size = new System.Drawing.Size(87, 16);
             this.label3.TabIndex = 11;
             this.label3.Text = "id Obligación";
             // 
             // lblUsuario
             // 
             this.lblUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblUsuario.Location = new System.Drawing.Point(784, 330);
+            this.lblUsuario.Location = new System.Drawing.Point(1045, 406);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(98, 13);
+            this.lblUsuario.Size = new System.Drawing.Size(131, 16);
             this.lblUsuario.TabIndex = 17;
             this.lblUsuario.Text = "UsuarioPrueba";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(729, 331);
+            this.label4.Location = new System.Drawing.Point(972, 407);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.Size = new System.Drawing.Size(61, 16);
             this.label4.TabIndex = 16;
             this.label4.Text = "Usuario :";
             // 
             // btnSalir
             // 
             this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSalir.Location = new System.Drawing.Point(12, 318);
+            this.btnSalir.Location = new System.Drawing.Point(16, 391);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(265, 36);
+            this.btnSalir.Size = new System.Drawing.Size(353, 44);
             this.btnSalir.TabIndex = 18;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -140,37 +149,40 @@
             // lblColumnas
             // 
             this.lblColumnas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblColumnas.Location = new System.Drawing.Point(784, 308);
+            this.lblColumnas.Location = new System.Drawing.Point(1045, 379);
+            this.lblColumnas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblColumnas.Name = "lblColumnas";
             this.lblColumnas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblColumnas.Size = new System.Drawing.Size(98, 14);
+            this.lblColumnas.Size = new System.Drawing.Size(131, 17);
             this.lblColumnas.TabIndex = 19;
             this.lblColumnas.Text = "0";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(701, 289);
+            this.label1.Location = new System.Drawing.Point(935, 356);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
+            this.label1.Size = new System.Drawing.Size(96, 16);
             this.label1.TabIndex = 20;
             this.label1.Text = "No. Registros: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(722, 310);
+            this.label2.Location = new System.Drawing.Point(963, 382);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(71, 16);
             this.label2.TabIndex = 21;
             this.label2.Text = "Columnas:";
             // 
             // frmCargarCatalogo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(909, 369);
+            this.ClientSize = new System.Drawing.Size(1212, 454);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblColumnas);
@@ -183,7 +195,9 @@
             this.Controls.Add(this.btnExportar);
             this.Controls.Add(this.btnLeerArchivoTxt);
             this.Controls.Add(this.dgvTexto);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCargarCatalogo";

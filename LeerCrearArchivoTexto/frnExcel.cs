@@ -142,6 +142,24 @@ namespace LeerCrearArchivoTexto
             //{
             //    hojas.Cells[i + 1, 1] = i;
             //}
+            string Cadena = "";
+            string concatenar = "";
+
+            string NombreArchivo = "prueba";
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Temporal\ArchivoTexto\" + NombreArchivo + ".txt", true))
+            {
+                for (int fila = 0; fila < dataGridView1.Rows.Count - 1; fila++)
+                {
+                    for (int col = 0; col < dataGridView1.Rows[fila].Cells.Count; col++)
+                    {
+                     //   string valor = dataGridView1.Rows[fila].Cells[col].Value.ToString();
+                            Cadena =  dataGridView1.Rows[fila].Cells[col].Value.ToString().Trim();
+                        concatenar += Cadena;
+                    }
+                }
+
+            }
+
         }
 
         private void frnExcel_Load(object sender, EventArgs e)
@@ -184,16 +202,16 @@ namespace LeerCrearArchivoTexto
                 exportar.WriteToServer(dataSet.Tables[0]);
 
 
-                ////  Actalizar  datos
-                //int idObligacion = Int32.Parse(_idObligacion);
-                //bool exito;
-                //exito = false;
-                //SqlCommand cmd2 = new SqlCommand("RQ_spCarga_Pagos_Sat", Conexion);
-                //cmd2.CommandType = CommandType.StoredProcedure;
-                //cmd2.Parameters.AddWithValue("@vEjercicio", 2019);
-                //cmd2.Parameters.AddWithValue("@vUsuario", lblUsuario.Text);
-                //int m = cmd2.ExecuteNonQuery();
-                //exito = (m > 0);
+                // Actalizar datos
+                // int idObligacion = Int32.Parse(_idObligacion);
+                bool exito;
+                exito = false;
+                SqlCommand cmd2 = new SqlCommand("RQ_spCarga_Pagos_Sat", Conexion);
+                cmd2.CommandType = CommandType.StoredProcedure;
+                cmd2.Parameters.AddWithValue("@vEjercicio", 2019);
+                cmd2.Parameters.AddWithValue("@vUsuario", lblUsuario.Text);
+                int m = cmd2.ExecuteNonQuery();
+                exito = (m > 0);
 
 
 
@@ -212,7 +230,6 @@ namespace LeerCrearArchivoTexto
                 Conexion.Close();
                 MessageBox.Show(Error.Message);
             }
-
         }
 
         private void txtEjercicio_TextChanged(object sender, EventArgs e)

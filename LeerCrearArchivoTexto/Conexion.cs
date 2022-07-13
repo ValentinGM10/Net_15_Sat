@@ -3,9 +3,9 @@
     public class ConexionBD
     {
 
-        // public static string CConexion = "Server=DCSUBSECRETARIA;Database=BD_DECLARACIE;User Id=usuario;Password=passw";
-        public static string CConexion = "Server=DCSUBSECRETARIA;Database=BD_DECLARACIE;User Id=consulta;Password=consulta2";
+        public static string CConexion = "Server=DCSAFOVBD;Database=BD_DECLARACIE;User Id=programadores;Password=adminsqlingresos";
 
     }
 }
+
 

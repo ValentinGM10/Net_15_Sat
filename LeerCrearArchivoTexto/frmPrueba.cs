@@ -175,8 +175,7 @@ namespace LeerCrearArchivoTexto
                     sr.Close();
                 }
             }
-
-            return (NumeroCampos);
+           return (NumeroCampos);
         }
 
         private void btnExportar_Click(object sender, EventArgs e)
